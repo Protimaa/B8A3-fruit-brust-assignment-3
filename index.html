@@ -25,7 +25,9 @@
         tailwind.config = {
           theme: {
             extend: {
-              
+              colors: {
+                'vivid-red-color': '#F85559',
+          },
               backgroundImage: {
               'banner-1': "url('./images/banner1.png')",
               'banner-2': "url('./images/banner2.png')",
@@ -46,8 +48,9 @@
 </head>
 <body class="font-lato">
     <header>
-      <nav class=" max-w-screen-xl mx-auto mt-10">
-        <div class="navbar bg-base-100  flex justify-evenly rounded-full bg-red-400 text-white">
+      <!-- navbar section starts from here  -->
+      <nav class=" max-w-screen-xl mx-auto my-10">
+        <div class="navbar bg-base-100  flex justify-evenly rounded-full bg-vivid-red-color text-white">
           <div class="  ">
               <div class="dropdown">
                   <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -88,8 +91,92 @@
           
         </div>
       </nav>
+      <!-- navbar section ends from here  -->
+      <section class=" max-w-screen-xl mx-auto">
+        <!-- banner section starts from here  -->
+        <div class="carousel w-full">
+          <div id="slide1" class="carousel-item relative w-full h-[calc(100vh-76px)]">
+
+            <div class="hero  bg-banner-1 " >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your  doorstep</h1>
+                  <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                  <button class="btn bg-vivid-red-color border-none text-white capitalize px-5">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div>  
+          <div id="slide2" class="carousel-item relative w-full  h-[calc(100vh-76px)]">
+            
+            
+            <div class="hero min-h-screen bg-banner-2" >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your  doorstep</h1>
+                  <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                  <button class="btn bg-vivid-red-color border-none text-white capitalize px-5">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide3" class="carousel-item relative w-full  h-[calc(100vh-76px)]">
+            
+            <div class="hero min-h-screen bg-banner-3" >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your  doorstep</h1>
+                  <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                  <button class="btn bg-vivid-red-color border-none text-white capitalize px-5">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <div id="slide4" class="carousel-item relative w-full  h-[calc(100vh-76px)]" >
+            
+            <div class="hero min-h-screen bg-banner-4" >
+              <div class="hero-overlay bg-opacity-60"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md">
+                  <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your  doorstep</h1>
+                  <p class="mb-5 text-xl font-medium">We supply highly quality organic products</p>
+                  <button class="btn bg-vivid-red-color border-none text-white capitalize px-5">Shop Now</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- banner section ends from here  -->
+      </section>
     </header>
-    <main></main>
+    <main>
+      
+    </main>
     <footer></footer>
 </body>
 </html>

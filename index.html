@@ -4,10 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B8A3-fruit-brust-assignment-3</title>
-    <link rel="shortcut icon" href="https://images.unsplash.com/photo-1519996529931-28324d5a630e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+
+    <!-- tailwind & Daisy links -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- font awesome icon  -->
+<script src="https://kit.fontawesome.com/a92f0f92be.js" crossorigin="anonymous"></script>
+
+    <!-- custom tailwind  -->
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              
+              backgroundImage: {
+              'banner-1': "url('./images/banner1.png')",
+              'banner-2': "url('./images/banner2.png')",
+              'banner-3': "url('./images/banner3.png')",
+              'banner-4': "url('./images/banner4.png')",
+              },
+              
+            }
+          }
+        }
+      </script>
+<!-- lato google fonts  -->
+<style>
+  .font-lato{
+    font-family: 'Lato', sans-serif;
+  }
+</style>
 </head>
-<body>
-    <header></header>
+<body class="font-lato">
+    <header>
+      <nav class=" max-w-screen-xl mx-auto mt-10">
+        <div class="navbar bg-base-100  flex justify-evenly rounded-full bg-red-400 text-white">
+          <div class="  ">
+              <div class="dropdown">
+                  <label tabindex="0" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </label>
+                  <ul tabindex="0" class="menu text-base menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                  </ul>
+              </div>
+
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg font-medium">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>News</a></li>
+                  <li><a>Contact</a></li>
+                </ul>
+              </div>
+
+            
+          </div>
+          
+          <div>
+            <img src="images/logo.png" alt=""  class="mr-2">
+            <span class="text-4xl font-bold"> Fruit Burst</span>
+          </div>  
+
+          <div class=" hidden md:flex ">
+            <button class="btn text-base font-normal px-10 rounded-full capitalize bg-white">
+              Search here
+              <i class="fa-solid fa-magnifying-glass text-red ml-20"></i>
+            </button>
+          </div>
+         
+          
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
 </body>

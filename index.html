@@ -173,7 +173,7 @@
         </div>
         <!-- banner section ends from here  -->
       
-        <div class="flex justify-center items-center">
+        <div class=" justify-center items-center hidden lg:flex">
           <div class="rounded-md -mt-20 flex px-16 py-5 items-center gap-4 drop-shadow-lg bg-white   w-auto">
             <div >
               <img src="./images/fruit1.png" alt=""  class="w-28 h-20">
@@ -204,13 +204,13 @@
     <main>
       <!-- Deal of the day starts from here  -->
       <section class="deal-day max-w-screen-xl mx-auto my-10">
-        <div class="flex my-20">
-          <div class=" flex-1 ">
+        <div class="flex my-10 flex-col lg:flex-row ">
+          <div class=" flex-1 p-16 m-0 md:m-0 md:p-0">
             <h3 class="font-extrabold text-5xl my-5">Deal of the day</h3>
             <p class="font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <div class=" flex-1 flex justify-end my-5">
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="grid grid-flow-col gap-0 md:gap-5 text-center auto-cols-max p-0 m-0 md:m-0 md:p-0">
               <div class="flex flex-col">
                 <span class="countdown font-mono text-5xl">
                   <span style="--value:19;"></span>
@@ -240,6 +240,23 @@
               </div>
             </div>
           </div>
+        </div>
+        <!-- Deal of the day card section starts from here  -->
+        <div>
+            <div class="card1">
+              <div class="card w-96 bg-base-100 shadow-xl">
+                <figure class="px-10 pt-10">
+                  <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p>If a dog chews shoes whose shoes does he choose?</p>
+                  <div class="card-actions">
+                    <button class="btn btn-primary">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
       </section>
     </main>
